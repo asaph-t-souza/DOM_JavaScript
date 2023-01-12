@@ -1,8 +1,9 @@
-function minhaFuncao(nome){
-    alert("alerta 1");
-    alert(nome);
+var entrada = document.getElementById("entrada");
+var botaoEnviar = document.getElementById("enviar");
+var saida = document.getElementById("saida");
+
+function copiarEntrada(){
+    saida.textContent = entrada.value;
 }
 
-minhaFuncao("Asaph");
-minhaFuncao("Teixeira");
-minhaFuncao("Souza");
+botaoEnviar.addEventListener("click", copiarEntrada);
