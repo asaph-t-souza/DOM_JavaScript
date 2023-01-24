@@ -3,7 +3,7 @@ var botaoEnviar = document.getElementById("enviar");
 var saida = document.getElementById("saida");
 
 function copiarEntrada(){
-    saida.textContent = entrada.value;
+    saida.innerHTML = entrada.value;
 }
-
+console.log("batata")
 botaoEnviar.addEventListener("click", copiarEntrada);
